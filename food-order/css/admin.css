@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper{
+    
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.footer{
+    background-color: brown;
+    color: white;
+    
+}
+.menu ul{
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(231, 101, 101);
+}
+
+.main-content{
+    background-color: rgb(186, 177, 177);
+    padding: 5% 0;
+
+    
+}
+.btn-primary{
+    background-color:#1e90ff;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color:#3742fa; 
+}
+
+.btn-secondary{
+    background-color:#05f87e;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.btn-secondary:hover{
+    background-color:#84e5b5; 
+}
+
+.btn-danger{
+    background-color:#ff351e;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color:#f67b6b; 
+}
+
+.menu{
+    border-bottom: 1px solid grey;
+}
+
+.col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+
+.clearfix{
+    float:none;
+    clear: both;
+}
+
+.tbl-full{
+    width: 100%;
+    padding: 1%;
+}
+  
+table tr td{
+    padding: 1%;
+    text-align: left;
+}
+
+table tr th{
+    text-align: left;
+    border-bottom: 1px solid black;
+}
