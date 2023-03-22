@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #srt{
+            background-image: url("https://www.shutterstock.com/image-vector/valentines-hearts-gift-box-postcard-260nw-1094401124.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script>
+        function love()
+        {
+        let txt1=document.getElementById("txt1").value
+        let txt2=document.getElementById("txt2").value
+        if(txt1 && txt2)
+        {   let result=Math.floor(Math.random()*100);
+            let str=(txt1+txt2).replace(/\s/g,"");
+            if(localStorage.getItem(str))
+            {
+                result=localStorage.getItem(str)
+            }
+            else
+            {
+                localStorage.setItem(str,result);
+            }
+            if(result<50)
+            {
+                document.getElementById("shant").innerHTML="Don't worry a number cannot define your love"
+            }
+            else 
+            {
+                if(result>50 && result<80)
+                {
+                    document.getElementById("shant").innerHTML="Hmmmmm,nice only 12% people have this percentage of love"
+                }
+                else
+                {
+                    document.getElementById("shant").innerHTML="an amazing result!!!!"
+                }
+            }
+
+            document.getElementById('result').innerHTML=result
+            console.warn(str)
+
+        }
+        else{
+            alert("enter the valid names")
+        }
+    }
+    </script>
+
+
+</head>
+<body id="srt">
+    <div style="text-align: center;">
+    <h1>LOVE  CALCULATOR </h1>
+    <img src="https://i.pinimg.com/originals/2e/0f/5f/2e0f5f14a8492c9b278bef8d00b1b1f1.png" alt="" width="18%">
+    <br> <br>
+    <input id="txt1"type="text" placeholder="enter your name">
+    <br> <br>
+    <input type="text" id="txt2" placeholder="enter your love name">
+    <br> <br>
+    <h2 id="result" style="color:rgb(23, 22, 22);" ></h2>
+    <h3 id="shant" style="color: rgb(125, 45, 45);"></h3>
+    <button onclick="love()">calculate love</button>
+</div>
+</body>
+</html>
