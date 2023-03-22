@@ -1,0 +1,23 @@
+.container{
+
+
+border: 2px solid sandybrown;
+
+/* flex-direction: column; */
+/* justify-content: end; */
+
+/* align-items: flex-end; */
+
+display: flex;
+
+flex-flow: column;
+
+}
+
+.fitem{
+    margin: 14px;
+    padding: 40px;
+    background-color: aquamarine;
+    
+
+}
